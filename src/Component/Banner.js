@@ -37,7 +37,7 @@ export const Banner =() =>{
                 setDelta(period);
             }
             else{
-                
+                <p>this is a trials</p>
             }
         }
 
