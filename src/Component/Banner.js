@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import megnaimg from "../assets/img/megna.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { Download } from 'react-bootstrap-icons';
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -47,6 +50,14 @@ export const Banner = () => {
     }
   }
 
+  const HandleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/CV.pdf'; // Must start with / if in public folder
+    link.download = 'megnaCv.pdf'; // This will be the downloaded filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Cleanup
+  };
   return (
     <section className="banner" id="home">
       <Container>
@@ -55,10 +66,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
+                <span className="tagline">Hey there !</span>
                 <h1 style={{color:'white'}}>{`Hi! I'm Megna Shrestha.`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={HandleDownload} className="download">Download my CV !<Download size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -66,7 +77,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={megnaimg} alt="Header Img" className="megna-image"/>
                 </div>}
             </TrackVisibility>
           </Col>
