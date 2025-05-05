@@ -3,6 +3,15 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import indrajatra from "../assets/img/indrajatra.png";
+import escooty from "../assets/img/escooty.png";
+import tihar from "../assets/img/tihar.png";
+import travel from "../assets/img/travel.png";
+import wellness from "../assets/img/wellness.png";
+import mobileapp from "../assets/img/mobileapp.png";
+import admin from "../assets/img/admin.png";
+import refurbished from "../assets/img/refurbished.png";
+import tempo from "../assets/img/tempo.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,80 +20,83 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Visiting Card (freelance)",
+      description: "Logo design & Branding",
       imgUrl: projImg1,
       link: "https://dribbble.com/shots/23817483-Simple-and-Elegant-Visiting-card"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "AI project manager ad campaign",
+      description: "Social media ad campaign",
       imgUrl: projImg2,
        link: "https://www.behance.net/gallery/220701291/AI-project-manager-ad-campaign"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Christmas Offer Banner",
+      description: "Social media ad bannner",
       imgUrl: projImg3,
        link: "https://www.behance.net/gallery/219108961/Christmas-Offer-Banner"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Indra Jatra",
+      description: "Social media post",
+      imgUrl: indrajatra,
        link: "https://www.behance.net/gallery/212755751/Indra-Jatra"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: " Ryan E-Scooty Brochure Design(freelance)",
+      description: "Brochure design",
+      imgUrl: escooty,
        link: "https://dribbble.com/shots/23942588-e-scooty-brochure-design"
     },
+
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: " Ryan E-tempo Brochure Design(freelance)",
+      description: "Brochure design",
+      imgUrl: tempo,
+       link: "https://dribbble.com/shots/23817330-Brochure-Design"
+    },
+    
+    {
+      title: "Tihar social media Posts",
+      description: "Festive greetings",
+      imgUrl: tihar,
        link: "https://www.behance.net/gallery/212755219/Happy-Tihar-Tihar-greetings"
     },
   ];
 
   const project1 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Tours & Travels",
+      description: "Web design(UIUX) for a travel agency",
+      imgUrl: travel,
       link: "https://dribbble.com/shots/25617693-Travel-Website-Design"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Wellness Company",
+      description: "  Web design(UIUX) for a wellness company",
+      imgUrl: wellness,
        link: "https://dribbble.com/shots/25618596-Wellness-website-UI-Design-SaaS-Website-Design"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Deerwalk Automobiles",
+      description: "Mobile app UI/UX design for deerwalk automobile company",
+      imgUrl: mobileapp,
        link: "https://dribbble.com/shots/23813999-Mobile-UI-UX"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Admin Site",
+      description: "Web design for deerwalk's admin site",
+      imgUrl: admin,
        link: "https://dribbble.com/shots/23816476-Admin-Side-Web-UI-UX-Design-Sample"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-       link: "https://dribbble.com/shots/23817483-Simple-and-Elegant-Visiting-card"
+      title: "wellness company",
+      description: "Christmas themed landing page UI design",
+      imgUrl: refurbished,
+       link: "https://dribbble.com/shots/25618344-Christmas-Themed-Landing-Page-UI-design-Revamped"
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-       link: "https://dribbble.com/shots/23817483-Simple-and-Elegant-Visiting-card"
-    },
+  
   ];
 
   return (

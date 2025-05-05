@@ -2,6 +2,11 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import { FaCode, FaPaintBrush, FaLaptopCode, FaPencilRuler } from "react-icons/fa";
+import figma from "../assets/img/figma.png";
+import photoshop from "../assets/img/ps.png";
+import illustrator from "../assets/img/illus.png";
+import react from "../assets/img/react.png";
+import premiere from "../assets/img/pre.png";
 
 
 export const Skills = () => {
@@ -10,6 +15,18 @@ export const Skills = () => {
     { icon: <FaPaintBrush size={60} color="#fff" />, title: "UI/UX Design", desc: "Designing user-friendly interfaces and experiences." },
     { icon: <FaLaptopCode size={60} color="#fff" />, title: "Graphic Design", desc: "Creating visually appealing graphics and branding." },
     { icon: <FaPencilRuler size={60} color="#fff" />, title: "Branding", desc: "Developing unique brand identities." },
+  ];
+
+  const tools = [
+    { name: 'Figma', icon: figma },
+    { name: 'Photoshop', icon: photoshop },
+    { name: 'Illustrator', icon: illustrator },
+    { name: 'React', icon: react },
+    { name: 'Premiere Pro', icon: premiere },
+    { name: 'Premiere Pro', icon: premiere },
+    { name: 'Premiere Pro', icon: premiere },
+    { name: 'Premiere Pro', icon: premiere },
+  
   ];
 
   return (
@@ -33,6 +50,32 @@ export const Skills = () => {
               </div>
             </div>
           ))}
+
+
+<div className="col-12 text-center pt-5">
+            <h3 className="text-white mb-5 pb-4">Tools I Use</h3>
+            <div className="row justify-content-center">
+              {tools.map((tool, index) => (
+                <div className="col-3 col-md-1  mb-4" key={index}>
+                  <div
+                    className="rounded-circle d-flex align-items-center justify-content-center mx-auto"
+                    style={{
+                      width: '70px',
+                      height: '70px',
+                      boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+                      backgroundColor: 'white',
+                    }}
+                  >
+                    <img
+                      src={tool.icon}
+                      alt={tool.name}
+                      style={{ width: '35px', height: '35px' }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
         </div>
       </div>
