@@ -316,7 +316,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Skills Css ************/
 .skill {
-  padding: 20px 0 80px 0;
+  padding: 20px 0 50px 0;
   position: relative;
   background-color: #0F050D;
 }
@@ -324,8 +324,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 0px  0px;
+  margin-top: 60px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -333,32 +333,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill p {
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 52px 0;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 0%;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: -4;
-}
+
+
+
 .card{
  background-color: rgba(255, 255, 255, 0.1)!important;
   border: 1px solid #fff !important;
   
 }
+
 
 /************ Projects Css ************/
 .project {
